@@ -1,0 +1,114 @@
+{
+    "data": [
+        {
+            "gender": "female",
+            "name": {
+                "title": "ms",
+                "first": "debra",
+                "last": "wells"
+            },
+            "location": {
+                "street": "2306 thornridge cir",
+                "city": "bernalillo",
+                "state": "rhode island",
+                "postcode": 14806,
+                "coordinates": {
+                    "latitude": "82.9564",
+                    "longitude": "19.1005"
+                },
+                "timezone": {
+                    "offset": "-3:00",
+                    "description": "Brazil, Buenos Aires, Georgetown"
+                }
+            },
+            "email": "debra.wells@example.com",
+            "login": {
+                "uuid": "4fd53d1c-0237-458e-beb7-849500a6460f",
+                "username": "l",
+                "password": "l",
+                "salt": "knDwF6R6",
+                "md5": "806af8fac2e1fe9120adef3db3debb91",
+                "sha1": "2682352c41801e49c1622533a808802a15fc9230",
+                "sha256": "2f88cae226ff0c8e5ec0222773b8bb8ab6f22c5da7ae0e5840f8748944928fef"
+            },
+            "dob": {
+                "date": "1974-11-14T02:56:18Z",
+                "age": 43
+            },
+            "registered": {
+                "date": "2008-04-07T23:54:53Z",
+                "age": 10
+            },
+            "phone": "(063)-240-9469",
+            "cell": "(342)-423-5480",
+            "id": {
+                "name": "SSN",
+                "value": "673-44-8242"
+            },
+            "picture": {
+                "large": "https://randomuser.me/api/portraits/women/3.jpg",
+                "medium": "https://randomuser.me/api/portraits/med/women/3.jpg",
+                "thumbnail": "https://randomuser.me/api/portraits/thumb/women/3.jpg"
+            },
+            "nat": "US"
+        },
+        {
+            "gender": "female",
+            "name": {
+                "title": "mademoiselle",
+                "first": "murielle",
+                "last": "marchand"
+            },
+            "location": {
+                "street": "6657 rue de la barre",
+                "city": "wagenhausen",
+                "state": "zürich",
+                "postcode": 4893,
+                "coordinates": {
+                    "latitude": "-1.8212",
+                    "longitude": "37.6591"
+                },
+                "timezone": {
+                    "offset": "-6:00",
+                    "description": "Central Time (US & Canada), Mexico City"
+                }
+            },
+            "email": "murielle.marchand@example.com",
+            "login": {
+                "uuid": "f4737468-7d1a-4b57-ae37-439b9a3aaff9",
+                "username": "m",
+                "password": "m",
+                "salt": "5Nu2v01p",
+                "md5": "3568f8c69776d044b71bab32bbcd9684",
+                "sha1": "1d995e4a01c042384657d83077eb2ac444b54a3d",
+                "sha256": "ffce5e36f47a647959ee2e9ba03074d74c323269479039d8a05186a0019a1459"
+            },
+            "dob": {
+                "date": "1981-12-31T12:20:01Z",
+                "age": 36
+            },
+            "registered": {
+                "date": "2009-11-18T08:03:09Z",
+                "age": 8
+            },
+            "phone": "(069)-319-4992",
+            "cell": "(740)-799-6949",
+            "id": {
+                "name": "AVS",
+                "value": "756.7932.4977.11"
+            },
+            "picture": {
+                "large": "https://randomuser.me/api/portraits/women/53.jpg",
+                "medium": "https://randomuser.me/api/portraits/med/women/53.jpg",
+                "thumbnail": "https://randomuser.me/api/portraits/thumb/women/53.jpg"
+            },
+            "nat": "CH"
+        }
+    ],
+    "info": {
+        "seed": "4d1e96b6f2708160",
+        "results": 2,
+        "page": 1,
+        "version": "1.2"
+    }
+}

@@ -2,12 +2,17 @@ import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
 import { RouterModule, Routes } from "@angular/router";
 import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 
 import { AppComponent } from "./app.component";
 import { HeaderComponent } from "./shared/layout/header/header.component";
 import { LoginComponent } from "./components/login/login.component";
 import { HomeComponent } from './components/home/home.component';
+import { UserDashComponent } from './components/user-dash/user-dash.component';
+
+
+import {LoginService} from './services/login.service';
 
 
 const appRoutes: Routes = [
@@ -17,13 +22,14 @@ const appRoutes: Routes = [
     pathMatch: 'full'
   },
   { path: "home", component: HomeComponent },
-  { path: "login", component: LoginComponent }
+  { path: "login", component: LoginComponent },
+  { path:"dash", component:UserDashComponent}
 ];
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, LoginComponent, HomeComponent],
-  imports: [BrowserModule, RouterModule.forRoot(appRoutes),ReactiveFormsModule],
-  providers: [],
+  declarations: [AppComponent, HeaderComponent, LoginComponent, HomeComponent, UserDashComponent],
+  imports: [BrowserModule, RouterModule.forRoot(appRoutes),ReactiveFormsModule,HttpClientModule],
+  providers: [LoginService],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
