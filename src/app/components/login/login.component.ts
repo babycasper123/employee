@@ -23,8 +23,6 @@ export class LoginComponent implements OnInit {
   submit(){
     //console.log(this.signupForm.value.username,this.signupForm.value.password);
     this.loginservice.login();
-
-    
   }
 
 }

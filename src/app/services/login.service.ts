@@ -7,7 +7,7 @@ export class LoginService {
   constructor(private httpClient: HttpClient) {}
 
   login(){
-         this.httpClient.get('http://localhost:3000/data').subscribe((res)=>{
+         this.httpClient.get('http://localhost:3000/api/empDetails').subscribe((res)=>{
          console.log(res);
     });
 
