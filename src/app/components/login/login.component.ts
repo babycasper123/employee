@@ -9,12 +9,12 @@ import { LoginService } from '../../services/login.service';
 })
 export class LoginComponent implements OnInit {
 
-  signupForm :FormGroup;
+  loginForm :FormGroup;
 
   constructor(private loginservice:LoginService) { }
 
   ngOnInit() {
-    this.signupForm = new FormGroup({
+    this.loginForm = new FormGroup({
       'username' : new FormControl(null),
       'password' : new FormControl(null)
     });
@@ -22,7 +22,7 @@ export class LoginComponent implements OnInit {
 
   submit(){
     //console.log(this.signupForm.value.username,this.signupForm.value.password);
-    this.loginservice.login();
+    this.loginservice.login(this.loginForm.value);
   }
 
 }

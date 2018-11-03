@@ -6,11 +6,24 @@ export class LoginService {
 
   constructor(private httpClient: HttpClient) {}
 
-  login(){
-         this.httpClient.get('http://localhost:3000/api/empDetails').subscribe((res)=>{
-         console.log(res);
-    });
+  login(loginCred){
+         this.httpClient.post('http://localhost:3000/api/Users/login',{
+           'username': loginCred.username,
+           'password' : loginCred.password
+         }).subscribe((res)=>{
+           console.log(JSON.stringify(res))
+         })
+  }
 
+
+  registerUser(formValues){
+    this.httpClient.post('http://localhost:3000/api/Users',{
+      'username': formValues.username,
+      'email':formValues.email,
+      'password' : formValues.password
+    }).subscribe((res)=>{
+      console.log(JSON.stringify(res));
+    })
   }
   
 }

@@ -13,6 +13,7 @@ import { UserDashComponent } from './components/user-dash/user-dash.component';
 
 
 import {LoginService} from './services/login.service';
+import { RegisterComponent } from './components/register/register.component';
 
 
 const appRoutes: Routes = [
@@ -23,11 +24,12 @@ const appRoutes: Routes = [
   },
   { path: "home", component: HomeComponent },
   { path: "login", component: LoginComponent },
-  { path:"dash", component:UserDashComponent}
+  { path:"dash", component:UserDashComponent},
+  { path:"register", component:RegisterComponent}
 ];
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, LoginComponent, HomeComponent, UserDashComponent],
+  declarations: [AppComponent, HeaderComponent, LoginComponent, HomeComponent, UserDashComponent, RegisterComponent],
   imports: [BrowserModule, RouterModule.forRoot(appRoutes),ReactiveFormsModule,HttpClientModule],
   providers: [LoginService],
   bootstrap: [AppComponent]
